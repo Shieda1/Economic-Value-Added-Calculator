@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economic Value Added Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="economicvalueaddedRadio" name="variables" checked>
+  <label for="economicvalueaddedRadio">Economic value added</label>
+
+  <input type="radio" id="NOPATRadio" name="variables">
+  <label for="NOPATRadio">NOPAT</label>
+
+  <input type="radio" id="investedcapitalRadio" name="variables">
+  <label for="investedcapitalRadio">Invested capital</label>
+
+  <input type="radio" id="WACCRadio" name="variables">
+  <label for="WACCRadio">WACC</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">NOPAT</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Invested capital</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">WACC</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
